@@ -1,20 +1,17 @@
 #footer {
-  background-color: #333;
-  color: #CCC;
+  background-color: $dark_gray;
+  color: $light-gray;
   padding: 40px 0;
-}
-
-#footer a {
-  color: #CCC;
-  font-size: 30px;
-  transition: 1s ease;
-  letter-spacing: 20px;
-}
-
-#footer a:hover {
-  color: #FFFF00;
-}
-
-#footer p {
-  margin-top: 10px;
+  a {
+    color: $light-gray;
+    font-size: 30px;
+    transition: 1s ease;
+    letter-spacing: 20px;
+    &:hover {
+      color: $yellow;
+    }
+  }
+  p {
+    margin-top: 10px;
+  }
 }
