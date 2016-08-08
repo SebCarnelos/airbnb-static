@@ -3,8 +3,10 @@
   <ul class="list-inline text-center">
     <% ["seb", "anne", "romain"].each do |member| %>
       <li>
-        <h2><%= member.capitalize %></h2>
-        <%= image_tag "#{member}.jpg", class: "img-circle avatar-xl", alt: "#{member}'s avatar" %>
+        <% link_to "flats/#{member}.html" do %>
+          <h2><%= member.capitalize %></h2>
+          <%= image_tag "#{member}.jpg", class: "img-circle avatar-xl", alt: "#{member}'s avatar" %>
+        <% end %>
       </li>
     <% end %>
   </ul>
